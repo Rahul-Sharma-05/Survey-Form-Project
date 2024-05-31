@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform.</p>
+   
+    <form id="survey-form">
+<div>
+<label for="name" id="name-label">Name :<input id="name" type="text" required placeholder="Enter your Name" max-length="20"/></label>
+
+<label for="father-name" id="name-label">Father Name :<input id="father-name" type="text" required placeholder="Enter your Father Name" max-length="20"/></label>
+
+<label for="mother-name" id="name-label">Mother Name :<input id="mother-name" type="text" required placeholder="Enter your Mother Name" max-length="20"/></label>
+
+<label for="email" id="email-label">Email :<input id="email" type="email" required placeholder="Enter your Email"/></label>
+
+<label for="age" id="number-label">Age :<input id="number" type="number" required min="18" max="120" placeholder="Age (should above 18 or above)"/></label>
+
+<label for="mobile-number">Mobile Number :<input id="number" type="number" required max-length="10" placeholder="Enter your Mobile Number"/></label>
+</div>
+
+
+<div class="">
+<label for="occupation">What is your Occupation?
+<select id="dropdown" name="occupation">
+  <option value="">Select occupation</option>
+  <option value="1">Student</option>
+  <option value="2">Teacher</option>
+  <option value="3">Farmer</option>
+  <option value="4">Govt. employee</option>
+  <option value="5">Others</option>
+  </select></label>
+</div>
+
+  <div class="">
+    <label for="Gender">Gender :
+<input class="inline" type="radio" name="gender" value="male"/>Male
+<input class="inline" type="radio" name="gender" value="female"/>Female
+<input class="inline" type="radio" name="gender" value="Other"/>Other
+    </label>
+  </div>
+
+  <div>
+    <label for="Caste">Caste :
+<input class="inline" type="radio" name="caste" value="ur"/>Unreserved
+<input class="inline" type="radio" name="caste" value="obc"/>OBC
+<input class="inline" type="radio" name="caste" value="st"/>ST
+<input class="inline" type="radio" name="caste" value="sc"/>SC
+<input class="inline" type="radio" name="caste" value="others"/>Others
+    </label>
+  </div>
+
+<div>
+  <label for="address">Address :</div>
+<div><textarea id="address" rows=5 cols=30 placeholder="Write your address here.."></textarea>
+</label>
+</div>
+
+
+<div>
+  <label for="checkbox">Please tick the following boxes :
+<input class="inlineA" type="checkbox" value="citizen"/>I am citizen of India.
+<input class="inlineA" type="checkbox" value="terms-and-conditions"/>I accept the terms and conditions.
+<input class="inlineA" type="checkbox" value="true-statement"/>All the above statement are true in my view.
+</label>
+</div>
+
+<div>
+<input type="submit" id="submit" />
+</div>
+
+    </form>
+  </body>
+  </html>
